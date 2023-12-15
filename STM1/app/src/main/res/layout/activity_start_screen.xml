@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Host Game Button -->
+    <Button
+        android:id="@+id/btnHostGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Host Game"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Text View to Display IP -->
+    <TextView
+        android:id="@+id/tvDisplayIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnHostGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Your IP: x.x.x.x"/>
+
+    <!-- Join Game Button -->
+    <Button
+        android:id="@+id/btnJoinGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Game"
+        android:layout_below="@id/tvDisplayIp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Edit Text to Enter IP -->
+    <EditText
+        android:id="@+id/etEnterIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter IP Address"
+        android:layout_below="@id/btnJoinGame"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
